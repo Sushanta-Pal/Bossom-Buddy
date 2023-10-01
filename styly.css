@@ -1,0 +1,262 @@
+/* Custom CSS for improved styling */
+.navbar {
+    background: linear-gradient(to right, #007bff, #00a2ff);
+    border-bottom: 2px solid #0056b3;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover {
+    color: #ff5722;
+}
+
+.navbar a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/* Add these CSS styles to your existing stylesheet */
+.extraordinary-word {
+    font-size: 32px; /* Adjust the font size as needed */
+    font-family: 'Impact', sans-serif; /* Use a bold and impactful font */
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Define unique styles for each letter */
+.extraordinary-word:nth-child(1) {
+    color: #ff5722; /* Set color for 'B' */
+}
+
+.extraordinary-word:nth-child(2) {
+    color: #ff0000; /* Set color for 'u' (red) */
+}
+
+.extraordinary-word:nth-child(3) {
+    color: #00ff00; /* Set color for 'd' (green) */
+}
+
+.extraordinary-word:nth-child(4) {
+    color: #0000ff; /* Set color for 'd' (blue) */
+}
+
+/* Add a hover effect */
+.extraordinary-word:hover {
+    transform: scale(1.2); /* Scale the letter on hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Your existing CSS styles */
+
+/* Add some extra CSS styles for the profile carousel */
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-box {
+    border: 2px solid #007bff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px; /* Add margin between profile boxes */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-box:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on hover */
+}
+
+/* Adjust other styles as needed */
+
+
+
+.cardd {
+    background: linear-gradient(to bottom, #fff, #f0f0f0);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 90%; /* Adjust the width for responsiveness*/
+     max-width: 400px;  /* Set a maximum width for larger screens  */ 
+     margin: 20px auto; 
+} 
+
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the contact/feedback form */
+.container {
+    margin-top: 30px;
+}
+
+.card{
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+/* About Us Section Styling */
+.about-us {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    color: #007bff;
+}
+
+.about-us p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.about-image {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the images */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.about-image:hover {
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+}
+
+/* CSS for the Contact Us button and effects */
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.btn-contact {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 0 0 calc(30.33% - 20px); /* Display three cards in a row */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
